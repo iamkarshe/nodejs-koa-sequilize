@@ -42,4 +42,4 @@ router.get("/", (ctx, next) => {
 app.use(bodyParser())
 app.use(router.routes())
 app.use(router.allowedMethods())
-app.listen(5000)
+app.listen(process.env.NODEJS_APP_PORT)
